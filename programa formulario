@@ -1,0 +1,53 @@
+# Formulario
+using System;
+
+namespace Formulario
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String Nombre;
+            String ApellidoPaterno;
+            String ApellidoMaterno;
+            String Ocupacion;
+            String Correo;
+            String Mes;
+            int Edad;
+
+            Console.WriteLine("REGISTRO EN EL SISTEMA");
+            Console.WriteLine("Ingresar nombre");
+            Nombre = Console.ReadLine();
+
+
+            Console.WriteLine("Ingresar apellido Paterno");
+            ApellidoPaterno = Console.ReadLine();
+
+
+            Console.WriteLine("Ingresar apellido Materno");
+            ApellidoMaterno = Console.ReadLine();
+
+
+            Console.WriteLine("Ingresar ocupación ");
+            Ocupacion = Console.ReadLine();
+
+            Console.WriteLine("Ingresa su correo electronico ");
+            Correo = Console.ReadLine();
+
+
+            Console.WriteLine("Ingresar edad: ");
+            Edad = Convert.ToInt32(Console.ReadLine());
+            if (Edad <= 18)
+            {
+                Console.WriteLine(Nombre);
+
+                Console.WriteLine(ApellidoPaterno);
+
+                Console.WriteLine(ApellidoMaterno);
+
+                Console.WriteLine(Ocupacion);
+
+
+                Console.WriteLine(Correo);
+                Console.WriteLine("El usuario es menor de edad, REGISTRO FALLIDO");
+            }
