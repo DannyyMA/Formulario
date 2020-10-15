@@ -1,0 +1,17 @@
+            if (Edad >= 18)
+            {
+                Console.WriteLine(Nombre);
+
+                Console.WriteLine(ApellidoPaterno);
+
+                Console.WriteLine(ApellidoMaterno);
+
+                Console.WriteLine(Ocupacion);
+
+
+                Console.WriteLine(Correo);
+                Console.WriteLine("El usuario es mayor de edad, REGISTRO EXITOSO");
+            }
+        }
+    }
+}
